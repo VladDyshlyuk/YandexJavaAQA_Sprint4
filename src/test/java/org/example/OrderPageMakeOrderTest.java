@@ -47,7 +47,7 @@ public class OrderPageMakeOrderTest {
 
 
     @Parameterized.Parameters
-    public static Object[][] getCredentials() {
+    public static Object[][] getTestOrderData() {
         return new Object[][]{
                 {"Владислав", "Дышлюк", "г. Барнаул, ул. Ленина", "Сокольники", "+79999999999", "05.08.2025", "трое суток", "чёрный жемчуг","я комментатор!"},
                 {"Иван", "Иванов", "За МКАДом", "Зорге", "+79808297890", "06.09.2026", "шестеро суток", "серая безысходность", "ааа!"},

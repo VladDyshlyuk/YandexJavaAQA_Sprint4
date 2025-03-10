@@ -9,6 +9,7 @@ import java.time.Duration;
 
 public class MainPage {
     private final WebDriver driver;
+    private static final String MAIN_PAGE_URL = "https://qa-scooter.praktikum-services.ru/";
 
     //Заголовок раскрывающегося блока
     private final By accordionHeading = By.className("accordion__heading");
@@ -26,7 +27,7 @@ public class MainPage {
     }
 
     public void open(){
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(MAIN_PAGE_URL);
     }
 
     public void clickHeading(int index){

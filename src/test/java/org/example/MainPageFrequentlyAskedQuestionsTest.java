@@ -26,7 +26,7 @@ public class MainPageFrequentlyAskedQuestionsTest {
     }
 
     @Parameterized.Parameters
-    public static Object[][] getCredentials() {
+    public static Object[][] getExpectedAnswers() {
         return new Object[][]{
                 {0, "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},
                 {1, "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим."},
@@ -57,8 +57,5 @@ public class MainPageFrequentlyAskedQuestionsTest {
         assertEquals("Неправильный текст ответа!", answerText, resultText);
     }
 
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
+
 }
